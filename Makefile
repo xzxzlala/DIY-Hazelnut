@@ -7,7 +7,9 @@ fmt:
 	refmt */*.rei --in-place
 
 build:
-	dune build bin/{main.bc.js,index.html}
+# dune build bin/{main.bc.js,index.html}
+	dune build bin/main.bc.js
+	dune build bin/index.html
 
 url:
 	@echo "file://$(HTML_FILE)"
